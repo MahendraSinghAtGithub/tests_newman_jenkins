@@ -2,15 +2,13 @@
   "name": "appbuildertests",
   "version": "1.0.0",
   "description": "testcase of api builder",
-  "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "api-test": "newman run tests/appbuilderApi.postman_collection.json"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mahendra singh",
   "dependencies": {
     "newman": "^4.5.7"
   }
