@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-test": "newman run tests/postman_collection.json"
+    "api-test": "newman run tests/postman_collection.json --disable-unicode"
   },
   "author": "Mahendra singh",
   "dependencies": {
