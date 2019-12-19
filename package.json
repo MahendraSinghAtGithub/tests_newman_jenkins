@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-test": "newman run tests/appbuilderApi.postman_collection.json"
+    "api-test": "newman run tests/postman_collection.json"
   },
   "author": "Mahendra singh",
   "dependencies": {
