@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "b6cfad38-9342-4e56-8551-b8c819c73d50",
+		"name": "Jenkins demo fixed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "99ddf7ce-4068-4dbe-895b-e7cb862514a2",
+						"exec": [
+							"tests[\"Body contains Host\"] = responseBody.has(\"host\");",
+							"",
+							"tests[\"Body contains URL\"] = responseBody.has(\"url\");",
+							"",
+							"console.log(data);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				},
+				"description": "Similar to httpbin.org/get. Return GET data."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
